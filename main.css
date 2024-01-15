@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
+
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+
+header,
+main {
+    max-width: 1440px;
+    width: 81%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --button-color: #FF5400;
+}
+section{
+    margin-bottom: 100px;
+}
+/* global style */
+
+/* header style */
+.header_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 40px 0 50px 0;
+}
+
+.header_logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.logo_text {
+    padding-left: 20px;
+}
+
+.logo_text>a>h1 {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.logo_text>a>h1>span {
+    color: var(--button-color);
+}
+
+.header_nav {
+    width: 45%;
+}
+
+.header_nav>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav>ul>li {
+    padding: 0 10px;
+}
+
+.header_nav>ul>li:nth-of-type(1)>a {
+    color: var(--button-color);
+}
+
+.header_nav>ul>li>a {
+    color: #424247;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.1s ease-in-out;
+}
+
+.header_nav>ul>li>a:hover {
+    color: rgb(111, 127, 233);
+}
+
+/* hamburger */
+.header_hamburger {
+    display: none;
+}
+
+.line {
+    width: 24px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.line:nth-of-type(2) {
+    margin: 4.5px 0;
+}
+
+/* header style */
+/* hero style */
+.hero_area {
+    background-image: url("./images/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero_overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+
+}
+
+.hero_text {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.hero_text>h1 {
+    text-align: center;
+    margin: 124px 0 24px 0;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.hero_text>p {
+    text-align: center;
+    margin-bottom: 64px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+}
+
+.hero_search {
+    margin-bottom: 124px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.find_form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+
+.find_form>input,
+.find_form>select,
+.submit_btn {
+
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+}
+
+.find_form>input,
+.find_form>select {
+    padding-left: 10px;
+}
+
+.submit_btn {
+    background: var(--button-color);
+    padding-left: 20%;
+    cursor: pointer;
+}
+
+.submit_btn>input {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 16px 5px;
+}
+
+.search_icon {
+    color: #FFF;
+    font-size: 24px;
+}
+
+.submit_btn>input {
+    border: none;
+    background: transparent;
+}
+
+/* hero style */
+/* Responsive style for tablet */
+@media screen and (min-width:601px) and (max-width:1024px) {
+
+    /* header responsive */
+    .header_area {
+        flex-direction: column;
+    }
+
+    .header_logo {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .logo_text>a>h1 {
+        font-size: 22px;
+    }
+
+    .header_nav {
+        width: 100%;
+    }
+
+    /* header responsive */
+    /* hero responsive */
+    .hero_text>h1 {
+        font-size: 28px;
+    }
+
+    .hero_text>p {
+        font-size: 16px;
+    }
+
+    .find_form {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .hero_search {
+        width: 90%;
+    }
+
+    .find_form>input,
+    .find_form>select {
+        padding: 16px;
+    }
+
+    .submit_btn {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* hero responsive */
+
+
+
+}
+
+/* Responsive style for mobile */
+@media screen and (max-width:600px) {
+
+    /* header responsive */
+    .logo_img {
+        width: 28px;
+        height: 33px;
+    }
+
+    .logo_img>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo_text {
+        padding-left: 10px;
+    }
+
+    .logo_text>a>h1 {
+        font-size: 18px;
+    }
+
+    .logo_text>a>h1>span {
+        color: var(--button-color);
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    .header_hamburger {
+        display: block;
+    }
+
+    /* header responsive */
+    /* hero responsive */
+    .hero_text>h1 {
+        font-size: 22px;
+    }
+
+    .hero_text>p {
+        font-size: 14px;
+    }
+
+    .find_form {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .hero_search {
+        width: 90%;
+    }
+
+    .find_form>input,
+    .find_form>select {
+        padding: 16px;
+    }
+
+    .submit_btn {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* hero responsive */
+
+}
