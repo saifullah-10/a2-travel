@@ -266,7 +266,11 @@ section{
 
 /* Responsive style for mobile */
 @media screen and (max-width:600px) {
-
+/* global style */
+header,main{
+    width: 96%;
+    
+}
     /* header responsive */
     .logo_img {
         width: 28px;
