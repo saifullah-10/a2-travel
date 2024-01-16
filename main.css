@@ -344,12 +344,14 @@ section {
     background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
 }
 
-.overlay_text>h1 {
+.overlay_text>h1>a {
     color: #FFF;
     font-size: 28px;
     font-weight: 800;
 }
-
+.overlay_text>h1:hover a{
+    color: #4bf26f;
+}
 .cmn>img {
     width: 100%;
     height: 100%;
@@ -454,7 +456,7 @@ section {
 
     section,
     .header_area {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     /* header responsive */
@@ -473,7 +475,7 @@ section {
     }
 
     .logo_text>a>h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .logo_text>a>h1>span {
@@ -559,9 +561,11 @@ section {
     }
     .country_text>h1{
         font-size: 20px;
+        margin-bottom: 15px;
     }
     .country_text>p{
         font-size: 14px;
+        margin-bottom: 20px;
     }
     .country_img {
         grid-template-columns: repeat(1, 1fr);
