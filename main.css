@@ -360,10 +360,146 @@ section {
 }
 
 /* country style */
+/* service style */
+.service_area{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.service_header{
+width: 50%;
+text-align: center;
+}
+.service_header>h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.service_header>p{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+line-height: 162.5%;
+margin-bottom: 40px;
+}
+.services{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 24px;
+}
+.service{
+width: calc(50% - 24px);
+padding: 32px;
+border-radius: 16px;
+}
+.service>h2{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 32px;
+}
+.service>p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5% ;
+    margin-top: 10px;
+}
+.service_bg1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.service_bg2{
+border: 1px solid rgba(41, 206, 246, 0.20);
+background: rgba(41, 206, 246, 0.05);
+}
+.service_bg3{
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+}
+ /* service style */
+ /* discount style */
+ .discount_area{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ }
+ .discount_text{
+
+ }
+ .discount_text>h1{
+
+ }
+ .discount_text>p{
+
+ }
+ .discount_deal{
+width: 100%;
+ }
+ .maldives{
+    background-image: url("./images/dealmalddives.jpg");
+ }
+ .deals{
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+padding: 56px;
+display: flex;
+border-radius: 15px;
+object-fit: cover;
+ }
+ .deal_card{
+    width: 60%;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding: 50px;
+ }
+ .deal_card>h1{
+
+ }
+ .deal_card>p{
+
+ }
+ .deal_card>h2{
+
+ }
+ .deal_card>button{
+
+ }
+ .card_space{
+    width: 40%;
+ }
+ .card_info{
+    display: flex;
+    align-items: center;
+ }
+ .card_info>span{
+display: flex;
+align-items: center;
+margin-right: 24px;
+ }
+ .bg{
+    background-color: #FF5400;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    margin-right: 8px;
+ }
+ .card_info>span>p{
+    display: inline;
+ }
+ /* discount style */
 /* Responsive style for tablet */
 @media screen and (min-width:601px) and (max-width:1024px) {
     section {
-        margin-bottom: 30px;
+        margin-bottom: 35px;
     }
 
     /* header responsive */
@@ -440,7 +576,24 @@ section {
     .country_text{
         width: 90%;
     }
+    .country_text>h1{
+        margin-bottom: 10px;
+    }
+    .country_text>p{
+        margin-bottom: 10px;
+    }
 /* country responsive */
+/* service responsive */
+.service_header{
+    width: 80%;
+}
+.service_header>h1{
+    margin-bottom: 10px;
+}
+.service_header>p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
 
 }
 
@@ -458,7 +611,9 @@ section {
     .header_area {
         margin-bottom: 40px;
     }
-
+p{
+    font-size: 14px;
+}
     /* header responsive */
     .logo_img {
         width: 28px;
@@ -496,9 +651,7 @@ section {
         font-size: 22px;
     }
 
-    .hero_text>p {
-        font-size: 14px;
-    }
+    
 
     .find_form {
         grid-template-columns: repeat(1, 1fr);
@@ -549,7 +702,6 @@ section {
         margin-bottom: 16px;
     }
 
-    .popular_text>p,
     .popular_point>ul>li {
         font-size: 14px;
     }
@@ -564,7 +716,6 @@ section {
         margin-bottom: 15px;
     }
     .country_text>p{
-        font-size: 14px;
         margin-bottom: 20px;
     }
     .country_img {
@@ -583,5 +734,28 @@ section {
     }
 
     /* country responsive */
+
+    /* service responsive */
+    .service_header{
+        width: 100%;
+    }
+    .service_header>h1{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .service_header>p{
+        margin-bottom: 16px;
+    }
+    .services{
+        flex-direction: column;
+        gap: 18px;
+    }
+    .service{
+        width: 100%;
+    }
+    .service>h2{
+font-size: 20px;
+    }
+    /* service responsive */
 
 }
