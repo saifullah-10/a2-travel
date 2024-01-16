@@ -865,12 +865,28 @@ margin-bottom: 16px;
 .discount_text>p{
     margin-bottom: 16px;
 }
+.deals{
+    padding: 100px 20px 20px 20px;
+}
 .deal_card{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
+}
+.deal_card>h1,.deal_card>h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.deal_card>p{
+    margin-bottom: 10px;
+}
+.deal_card>button{
+    padding: 9px 0;
+}
+.deal_card>button>a{
+    font-size: 18px;
 }
 .card_info{
     margin-bottom: 15px;
@@ -892,6 +908,13 @@ margin-bottom: 16px;
 }
 .card_space{
     display: none;
+}
+.discount_area>button{
+    padding: 9px 0;
+    margin-top: 20px;
+}
+.discount_area>button>a{
+    font-size: 18px;
 }
     /* discount responsive */
 
