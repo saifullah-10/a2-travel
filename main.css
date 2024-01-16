@@ -430,19 +430,40 @@ justify-content: center;
 align-items: center;
  }
  .discount_text{
-
+width: 50%;
+margin: 0 auto;
+text-align: center;
  }
  .discount_text>h1{
-
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
  }
  .discount_text>p{
-
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 162.5%;
+    margin-bottom: 40px;
+ }
+ .order{
+    order: -1;
  }
  .discount_deal{
 width: 100%;
+display: flex;
+flex-direction: column;
+gap: 24px;
  }
  .maldives{
     background-image: url("./images/dealmalddives.jpg");
+ }
+ .kashmir{
+    background-image: url("./images/dealkashmir.jpg");
+ }
+ .capadocia{
+    background-image: url("./images/dealcappadocia.jpg");
  }
  .deals{
 width: 100%;
@@ -452,6 +473,8 @@ padding: 56px;
 display: flex;
 border-radius: 15px;
 object-fit: cover;
+background-position: center;
+
  }
  .deal_card{
     width: 60%;
@@ -462,16 +485,32 @@ object-fit: cover;
     padding: 50px;
  }
  .deal_card>h1{
-
+margin-bottom: 16px;
+color: #131318;
+font-size: 24px;
+font-weight: 800;
  }
  .deal_card>p{
-
+margin-bottom: 16px;
+color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 162.5%;
  }
  .deal_card>h2{
-
+margin-bottom: 24px;
  }
  .deal_card>button{
-
+border: none;
+padding: 14px 0;
+background-color: var(--button-color);
+border-radius: 5px;
+ }
+ .deal_card>button>a{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 14px 24px;
  }
  .card_space{
     width: 40%;
@@ -479,6 +518,12 @@ object-fit: cover;
  .card_info{
     display: flex;
     align-items: center;
+    margin-bottom: 26px;
+ }
+ .card_info>p{
+    color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
  }
  .card_info>span{
 display: flex;
@@ -494,6 +539,19 @@ margin-right: 24px;
  }
  .card_info>span>p{
     display: inline;
+ }
+ .discount_area>button{
+    border: none;
+    padding: 14px 0;
+    background: var(--button-color);
+    margin-top: 40px;
+    border-radius: 5px;
+ }
+ .discount_area>button>a{
+    padding: 14px 22px;
+    color: #FFF;
+font-size: 20px;
+font-weight: 800;
  }
  /* discount style */
 /* Responsive style for tablet */
@@ -594,6 +652,45 @@ margin-right: 24px;
     margin-bottom: 10px;
     font-size: 16px;
 }
+ /* discount responsive */
+ .discount_text{
+    width: 90%;
+}
+.discount_text>h1{
+margin-bottom: 16px;
+}
+.discount_text>p{
+margin-bottom: 16px;
+}
+.deal_card{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 28px;
+}
+.card_info{
+margin-bottom: 15px;
+justify-content: space-between;
+}
+.card_info>h1{
+margin-bottom: 10px;
+}
+.card_info>span{
+flex-direction: column;
+
+}
+.card_info>span>p{
+font-size: 16px;
+}
+.card_info>span>span{
+margin: 0;
+margin-bottom: 5px;
+}
+.card_space{
+display: none;
+}
+/* discount responsive */
 
 }
 
@@ -757,5 +854,45 @@ p{
 font-size: 20px;
     }
     /* service responsive */
+    /* discount responsive */
+    .discount_text{
+        width: 90%;
+    }
+.discount_text>h1{
+font-size: 20px;
+margin-bottom: 16px;
+}
+.discount_text>p{
+    margin-bottom: 16px;
+}
+.deal_card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+.card_info{
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.card_info>h1{
+    margin-bottom: 10px;
+}
+.card_info>span{
+    flex-direction: column;
+    
+}
+.card_info>span>p{
+    font-size: 10px;
+}
+.card_info>span>span{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.card_space{
+    display: none;
+}
+    /* discount responsive */
 
 }
